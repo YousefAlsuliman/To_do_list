@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+  <h1 class="mb-3">📝 Welcome to the Django To-Do App</h1>
+  <p class="lead">Track your daily tasks, stay organized, and boost productivity.</p>
+  <div class="mt-4">
+    <a href="/accounts/login/" class="btn btn-primary btn-lg me-2">Login</a>
+    <a href="{% url 'register' %}" class="btn btn-outline-secondary btn-lg">Register</a>
+  </div>
+</div>
+{% endblock %}
